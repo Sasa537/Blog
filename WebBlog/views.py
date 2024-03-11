@@ -19,3 +19,7 @@ def index(request):
 
 def about(request):
     return render(request, 'webblog/about.html')
+
+
+def contacts(request):
+    return render(request, 'webblog/contacts.html')
