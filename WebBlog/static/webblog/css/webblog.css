@@ -66,4 +66,19 @@ text-align: center;
 width: -35%;
 }
 
+main .articles{
+float: left;
+color: #fff;
+margin-top: 100px;
+text-align: center;
+width: 75%;
+}
+
+main .articles h1{font-size: 60px;}
+main .articles p{
+max-width: 1000px;
+margin: 20px auto
+
+}
+
 

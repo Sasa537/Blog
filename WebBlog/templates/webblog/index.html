@@ -10,7 +10,7 @@
     <div class = "alert alert-warning">
         <h3>{{ el.title }}</h3>
         <p>{{ el.preview }}</p>
-        <button class="btn btn-warning">Читать статью полностью</button>
+        <a href="{% url 'article-detail' el.id %}" class="btn btn-warning">Читать статью полностью</a>
     </div>
 
     {% endfor %}

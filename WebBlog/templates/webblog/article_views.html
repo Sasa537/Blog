@@ -1,0 +1,15 @@
+{% extends 'webblog/base.html'%}
+
+
+{% block title %}Статья{% endblock%}
+
+
+{% block content %}
+<div class="articles">
+   <h1>{{ article.title}}</h1>
+    <p>{{ article.date }}</p>
+    <p>{{ article.full_text }}</p>
+  <a href="/" class="btn btn-warning">На Главную</a>
+</div>
+
+{% endblock%}

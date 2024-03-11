@@ -1,6 +1,12 @@
 from django.shortcuts import render
 from .models import Articles
 from django.core.paginator import Paginator
+from django.views.generic import DetailView
+
+class ArticleDetailViews(DetailView):
+    model = Articles
+    template_name = 'webblog/article_views.html'
+    context_object_name = 'article'
 
 
 def index(request):
