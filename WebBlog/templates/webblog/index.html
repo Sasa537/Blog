@@ -6,9 +6,35 @@
 
 {% block content %}
 <div class="features">
-    <h1>Главная страница</h1>
-<p>Здесь будет главная страница</p>
-<button class="btn btn-warning">На страницу о нас</button>
+   {% for el in page_obj %}
+    <div class = "alert alert-warning">
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.preview }}</p>
+        <button class="btn btn-warning">Читать статью полностью</button>
+    </div>
+
+    {% endfor %}
+
 </div>
 
+
+<div class="pag">
+ <div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+    </div>
 {% endblock%}

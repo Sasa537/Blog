@@ -7,7 +7,7 @@ float: left;
 background: #181818;
 width: 20%;
 padding: 2.5%;
-height: 100vh;
+height: 170vh;
 color: #fff;
 border-right: 5px solid #4d4d4d;
 }
@@ -48,3 +48,22 @@ width: 75%;
 
 main .features h1{font-size: 50px;}
 main .features p{max-width: 400px; margin: 20px auto}
+
+.alert-warning{
+float: left;
+clear: both;
+width: 900px;
+margin: 10px 14%;
+text-align: left;
+}
+
+main .pag{
+float: left;
+color: #fff;
+margin-top: 10px;
+margin-left: 500px;
+text-align: center;
+width: -35%;
+}
+
+
