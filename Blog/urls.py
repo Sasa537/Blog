@@ -22,5 +22,8 @@ urlpatterns = [
     path('tinymce/', include('tinymce.urls')),
     path('', include('WebBlog.urls')),
     path('about', include('WebBlog.urls')),
-    path('contacts', include('WebBlog.urls'))
+    path('contacts', include('WebBlog.urls')),
+    path('api/', include('BlogAPI.urls')),
+
+
 ]
